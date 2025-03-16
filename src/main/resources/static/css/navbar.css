@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Pushes items apart */
+    align-items: center;
+    padding: 15px 50px;
+    /*background-color: #333;*/
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-links li {
+    margin-left: 30px; /* Space between menu items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+}

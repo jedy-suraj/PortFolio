@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio: Suraj Shinde</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+<!-- Hero Section -->
+<header class="hero" id = "hero">
+  <div class="navdiv">
+  <nav class="navbar">
+
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class="container">
+    <div class="profile-container">
+      <div class="image-zoom">
+      <img src="/images/profile1.png"
+           alt="Profile Photo"
+           class="profile-photo">
+      </div>
+    </div>
+    <h2>Suraj Shinde</h2>
+    <h4>Spring Boot Backend Developer</h4>
+    <p class="subtitle">Spring Boot Backend Developer | Turning Ideas into Robust APIs</p>
+    <div class="social-links">
+      <a href="/others/Suraj_Shinde_Pune.pdf" download="resume.pdf" rel="noopener noreferrer" class="button">
+        Resume/CV
+      </a>
+      <a href="https://www.linkedin.com/in/suraj-shinde-26a018237/" target="_blank" rel="noopener noreferrer" class="button">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section class="about" id = "about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I am a <strong>Spring Boot Backend Developer</strong> passionate about building <strong>scalable and efficient backend systems</strong>
+        using <strong>Java, Spring Boot, REST APIs, Microservices, and Databases</strong>. With hands-on experience in <strong>Spring Security,
+        Caching, and Logging</strong>, I have developed projects like an <strong>Employee Management System</strong> and a <strong>Job Application Portal</strong>,
+        implementing best practices in backend development. Always eager to learn and grow, I strive to create <strong>high-performance
+        and reliable applications</strong>, and I am looking for opportunities to contribute to innovative projects. 🚀
+      </p>
+      <div class="center-image">
+      <img src="/images/workplace.jpg"
+           alt="Coding workspace"
+           class="about-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id = "skill">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming Language</h3>
+        <p>Java</p>
+      </div>
+      <div class="skill-card">
+        <h3>Backend Technologies</h3>
+        <p>Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Spring Cloud, Hibernate, JDBC</p>
+      </div>
+      <div class="skill-card">
+        <h3>API Development and Microservices</h3>
+        <p>RESTful APIs, OpenFeign, API Gateway (Spring Cloud Gateway), Eureka
+          (Service Discovery)</p>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Database</h3>
+        <p>MySQL, Redis</p>
+      </div>
+      <div class="skill-card">
+        <h3>Logging and Exception Handling</h3>
+        <p>SLF4J, Exception Handling in Spring Boot</p>
+      </div>
+      <div class="skill-card">
+        <h3>Security Protocols</h3>
+        <p>OAuth2, JWT</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id = "project">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+             alt="Insurance Management System">
+        <div class="project-content">
+          <h3>Insurance Management System</h3>
+          <p>A scalable insurance management system built with Spring Boot, featuring logging, exception handling, Redis caching, secure APIs (JWT, OAuth2), service discovery, and inter-service communication with Eureka and OpenFeign.</p>
+
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/images/jobverse.png"
+             alt="JobVerse: Job Portal">
+        <div class="project-content">
+          <h3>JobVerse: Job Portal</h3>
+          <p>Developed a Spring Boot-based job application platform enabling users to apply for jobs and track applications. Implemented structured logging, exception handling, and Redis caching for performance and reliability. Designed a scalable backend architecture for seamless job postings and applicant tracking.</p>
+        </div>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="/images/sem.png"
+             alt="Employee Management System">
+        <div class="project-content">
+          <h3>Employee Management System</h3>
+          <p>Developed a Spring Boot CRUD-based employee management system with logging, exception handling, secure data access, and optimized queries for efficiency.</p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Let's Connect</h2>
+    <p class="contact-text">I'm currently looking for new opportunities and would love to hear from you!</p>
+    <div class="contact-links">
+      <a th:href="@{'/contact'}" class="button button-white">Email Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2025 Suraj Shinde. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -18,20 +18,20 @@ import java.io.UnsupportedEncodingException;
 public class MailServiceImpl implements MailService {
 
 
-    private final JavaMailSenderImpl mailSender;
+
     private JavaMailSender javaMailSender;
     private TemplateEngine templateEngine;
 
     @Autowired
-    public MailServiceImpl(JavaMailSender javaMailSender, TemplateEngine templateEngine, JavaMailSenderImpl mailSender) {
+    public MailServiceImpl(JavaMailSender javaMailSender, TemplateEngine templateEngine) {
         this.javaMailSender = javaMailSender;
         this.templateEngine = templateEngine;
-        this.mailSender = mailSender;
+
     }
     @Override
     public void sendMail(ContactInfo contactInfo) throws MessagingException, UnsupportedEncodingException {
 
-        String to="surajshindemn@gmail.com";
+        String to="surajshinde2307@gmail.com";
         String message=contactInfo.getMessage();
         String contactMail=contactInfo.getEmail();
         String name=contactInfo.getName();
@@ -52,7 +52,7 @@ public class MailServiceImpl implements MailService {
         String htmlContent = templateEngine.process("email-noti.html", context);
         mimeMessageHelper.setText(htmlContent, true);
 
-        mailSender.send(mimeMessage);
+        javaMailSender.send(mimeMessage);
         System.out.println("Mail sent");
 
     }
